@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.fall.thangpq.interactivestory.ui.StoryActivity"
+    android:id="@+id/RelativeLayout"
+    android:background="@android:color/white">
+
+    <ImageView
+
+        android:id="@+id/storyImageView"
+        android:src="@drawable/page0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        style="@style/StoryContentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="On your return trip from studying Saturn&apos;s rings, you hear a distress signal that seems to be coming from the surface of Mars. It&apos;s strange because there hasn&apos;t been a colony there in years. Even stranger, it&apos;s calling you by name: &quot;Help me, %1$s, you&apos;re my only hope."
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Stop and investigate"
+        android:id="@+id/choiceButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="Continue home to Earth"
+        android:id="@+id/choiceButton1"
+        android:layout_above="@+id/choiceButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+</RelativeLayout>
